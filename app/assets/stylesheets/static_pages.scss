@@ -2,23 +2,72 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+
+.navbar-inverse {
+    color: #000;
+}
+
+.navbar-fixed-top {
+    border-width: 0 0 5px;
+    border-color: #fff;
+}
+
+.navbar-inverse .navbar-brand > a {
+    color: #ffffff;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #ffffff;
+  }
+
+.navbar-inverse .navbar-nav>li>a {
+  color: #ffffff;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-nav>li>a:focus  {
+  background-color: #96ceb4;
+}
+
+body {
+  background-color: #96ceb4;
+  font-family: verdana, arial, helvetica, sans-serif;
+}
+
+.page_content {
+  margin: auto;
+  padding: 10px;
+}
+
 h1 {
-	color: blue;
-  margin-top: 60px;
+  margin-top: 100px;
+  font-size: 2em;
+  text-align: center;
 }
 
 h2 {
-	color: red;
-  margin-top: 60px;
+  margin-top: 100px;
+  font-size: 3em;
+  text-align: center;
+}
+
+p {
+  font-size: 1em;
+  text-align: center;
 }
 
 footer {
-  /* border: 1px solid black; */
+  border-style: solid;
+  border-width: 5px 0px 0px 0px;
+  border-color: #fff;
+  color: #fff;
   position: absolute;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 50px;
+  /*height: 50px;*/
   /*line-height:50px;*/
-  background-color: #f5f5f5;
+  padding: 15px 0px 15px 0px;
+  background-color: black;
 }
