@@ -1,11 +1,42 @@
-<section class="container">
+<!-- new product section starts here -->
 
-  <div class="page_content">
+<%= form_for @product do |f| %>
 
-		<h2>New Product</h2>
+	<div class="container">
+		
+		<h2>New product</h2><br>
+
+		<div class="row">
+
+			<div class="col-md-4 col-md-offset-4">
+				<div class="form-group">
+					<%= f.label :name %>
+					<%= f.text_field :name, class: 'form-control', placeholder: 'Enter Name' %>
+				</div>
+
+				<div class="form-group">
+					<%= f.label :description %>
+					<%= f.text_area :description, rows: '5', class: 'form-control', placeholder: 'Description' %>
+				</div>
+				
+				<div class="form-group">
+					<%= f.label :image_url %>
+					<%= f.text_field :image_url, class: 'form-control', placeholder: 'Image URL' %>
+				</div>
+					
+				<br>
+				<div class="actions">
+					<%= f.submit class: 'btn btn-default' %>
+				</div>
+			
+				<br>
+				<p><%= link_to 'Back', products_path %></p>
+			
+			</div><!--END col-md-4 col-md-offset-4-->
+		
+		</div><!--END row-->
 	
-		<p><%= render 'form', product: @product %></p>
-		<p><%= link_to 'Back', products_path %></p>
+	</div><!--END container--> 
 
-	</div>
-</section>
+<% end %>
+
