@@ -20,16 +20,19 @@
 				</div>
 				
 				<div class="form-group">
+					<%= f.label :color %>
+					<%= f.text_field :color, class: 'form-control', placeholder: 'Enter color' %>
+				</div>
+
+				<div class="form-group">
 					<%= f.label :image_url %>
 					<%= f.text_field :image_url, class: 'form-control', placeholder: 'Image URL' %>
 				</div>
 					
-				<br>
 				<div class="actions">
 					<%= f.submit class: 'btn btn-default' %>
 				</div>
 			
-				<br>
 				<p><%= link_to 'Back', products_path %></p>
 			
 			</div><!--END col-md-4 col-md-offset-4-->
