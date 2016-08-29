@@ -6,7 +6,7 @@
 /* ============================= TYPOGRAPHY ============================= */
 
 * {
-  font-family: candara, arial, helvetica, sans-serif;
+  font-family: Century Gothic, arial, helvetica, sans-serif;
 }
 
 
@@ -26,6 +26,7 @@ h1 {
 h2 {
   font-size: 3em;
   text-align: center;
+  font-weight: bold;
 }
 
 h3 {
@@ -62,8 +63,7 @@ p {
   color: #ffffff;
 }
 
-.navbar-inverse .navbar-nav>li>a:hover,
-.navbar-inverse .navbar-nav>li>a:focus  {
+.navbar-inverse .navbar-nav>li>a:hover {
   background-color: #96ceb4;
 }
 
@@ -89,10 +89,14 @@ p {
   margin-bottom: 10px;
 }
 
-.btn_new_product {
-  margin-bottom: 100px;
+.fright {
+  max-width: 250px;
+  padding: 5px; 
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 20px;
+  height: 34px;
+  text-align:center;
 }
 
 
@@ -106,13 +110,11 @@ p {
 /* ============================= FOOTER ============================= */
 
 
-
 footer {
 
   height: 50px;
   width: 100%;
   background-color: black;
-  
 }
 
 .down {
@@ -129,9 +131,10 @@ footer {
 }
 
 .down p {
-  text-align: left;
   font-size: 1em;
   color: #fff;
   background-color: #000;
+  height: 50px;
+  padding-top: 10px;
 }
 

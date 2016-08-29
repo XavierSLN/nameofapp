@@ -1,13 +1,16 @@
-<p id="notice"><%= notice %></p>
-
 <!-- products section starts here -->
 
 <div class="container-fluid">
 
   <h2>Products</h2>
-  <br><br>
 
   <div class="row">
+    <div class="col-sm-4 col-sm-offset-8 col-md-3 col-md-offset-9">  
+      <div class="fright">
+        <%= link_to 'New product', new_product_path, class: 'btn btn-default' %>
+      </div>
+    </div><!-- END col -->
+    <br><br>
     <% @products.each do |product| %>
       <div class="col-sm-4 col-md-3">
         <div class="product_box">
@@ -25,9 +28,7 @@
         </div><!-- END product_box -->
       </div><!-- END col -->
     <% end %>
-      <div class="col-sm-4 col-md-3">    
-        <%= link_to 'New product', new_product_path, class: 'btn btn-default btn_new_product' %>
-      </div><!-- END col -->
+
     </div><!-- END row -->  
 
 

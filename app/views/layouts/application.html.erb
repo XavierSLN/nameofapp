@@ -41,17 +41,16 @@
       </div> <!-- end nav container --> 
     </nav> <!-- end navbar --> 
 
+    <!-- Notice is for displaying the successful messages when clicking on edit and update a product -->
+    <p id="notice"><%= notice %></p>
+
     <%= yield %>
 
   <footer class="navbar-fixed-bottom">
-    <row>
-      <div class="down">
-      <div class="col-md-6"><p>&copy Bike Berlin, 2016</p></div>
-      <div class="col-md-3"><a href="https://twitter.com/xavsln" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @xavsln</a>
-      </div>
-      <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
-      </div>
-    </row>
+      <div class="col-md-12 down">
+        <p>&copy Bike Berlin, 2016 &#124 <a href="https://twitter.com/xavsln" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @xavsln</a> &#124 Facebook </p>
+      </div><!-- END down -->
+
   </footer>
 
   </body>
