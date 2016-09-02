@@ -1,50 +1,6 @@
 <!-- new product section starts here -->
-
-<%= form_for @product do |f| %>
-
-	<div class="container" id="new_product">
-		
-		<h2>New product</h2><br>
-
-		<div class="row">
-
-			<div class="col-md-4 col-md-offset-4">
-				<div class="form-group">
-					<%= f.label :name %>
-					<%= f.text_field :name, class: 'form-control', placeholder: 'Enter Name' %>
-				</div>
-
-				<div class="form-group">
-					<%= f.label :description %>
-					<%= f.text_area :description, rows: '5', class: 'form-control', placeholder: 'Description' %>
-				</div>
-				
-				<div class="form-group">
-					<%= f.label :color %>
-					<%= f.text_field :color, class: 'form-control', placeholder: 'Enter color' %>
-				</div>
-
-				<div class="form-group">
-					<%= f.label :price %>
-					<%= f.text_field :price, class: 'form-control', placeholder: 'Enter price' %>
-				</div>
-
-				<div class="form-group">
-					<%= f.label :image_url %>
-					<%= f.text_field :image_url, class: 'form-control', placeholder: 'Image URL' %>
-				</div>
-				<br><br>		
-				<div class="actions">
-					<%= f.submit class: 'btn btn-default' %>
-				</div>
+<h2>New product</h2><br>
+<%= render 'form' %>
+<p><%= link_to 'Back', products_path %></p>
 			
-				<p><%= link_to 'Back', products_path %></p>
 			
-			</div><!-- END col-md-4 col-md-offset-4 -->
-		
-		</div><!-- END row -->
-	
-	</div><!-- END container --> 
-
-<% end %>
-
