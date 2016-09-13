@@ -9,7 +9,7 @@ class ProductsController < ApplicationController
 
   # GET /products/1
   # GET /products/1.json
-  def show
+  def show #method to retrieve data of a given product and display a page back to user (through show.html.erb view)
   end
 
   # GET /products/new

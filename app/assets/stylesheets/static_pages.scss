@@ -74,6 +74,12 @@ p {
   margin: auto;
 }
 
+.img-inside {
+  min-height: 55vh;
+  max-height: 55vh;
+  /*margin: auto;*/
+}
+
 
 /* ============================= PRODUCTS ============================= */
 
@@ -85,16 +91,38 @@ p {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 70px;
-  height: 360px;
+  height: 400px;
+}
+
+.product_row_1 {
+  /*border: 2px solid white;*/
+  height: 25px;
+  padding: 1px 0px 1px 0px;
+}
+
+.product_row_2 {
+  /*border: 2px solid white;*/
+  height: 50px;
+  padding: 1px 0px 1px 0px;
+}
+
+.product_row_3 {
+  /*border: 2px solid white;*/
+  padding: 1px 0px 1px 0px;
+}
+
+.product-img {
+  /*border: 2px solid white;*/
+  margin-bottom: 10px;
+  width:100%;
+  height:140px;
 }
 
 .product_box p {
   font-size: 1em;
 }
 
-.img_product {
-  margin-bottom: 10px;
-}
+
 
 .fright {
   max-width: 250px;

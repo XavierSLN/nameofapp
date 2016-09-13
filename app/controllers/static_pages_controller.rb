@@ -4,12 +4,7 @@ class StaticPagesController < ApplicationController
 
   def landing_page
   	products = Product.all
-  	if products.size > 5
-  		@products = Product.limit(4)
-  	else 
-  		@products = Product.limit(3)
-  	end
-  end	
-
+  	@products = Product.limit(3)
+  end
 
 end

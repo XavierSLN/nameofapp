@@ -1,13 +1,13 @@
 <div class="col-sm-4 col-md-3">
 	<div class="product_box">
-  	<h3><%= product.name %></h3>
+  	<h3 class="product_row_1"><%= product.name %></h3>
 
-  	<%= image_tag(product.image_url, class: "img-responsive img_product") %>
+  	<%= image_tag(product.image_url, class: "img-responsive product-img") %>
 
-  	<p><%= product.description %></p>
-  	<p><%= product.color %></p>
-  	<p><%= product.price %></p>
-  	<p>
+  	<p class="product_row_2"><%= truncate(product.description, length: 50) %></p>
+  	<p class="product_row_1"><%= product.color %></p>
+  	<p class="product_row_1"><%= product.price %></p>
+  	<p class="product_row_3">
   	<%= link_to 'Show', product, class:"btn btn-default" %>  
   	<%= link_to 'Edit', edit_product_path(product), class:"btn btn-default" %> 
   	<%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-default" %></p>

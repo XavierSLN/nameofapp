@@ -1,6 +1,7 @@
 <h2>Featured products:</h2>
 
 
+
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
 
@@ -11,19 +12,19 @@
   </ol>
 
   <!-- Wrapper for slides -->
-<div class="c-wrapper">
-  <div class="carousel-inner" role="listbox">
-    <% @products.each do |product| %>
-  	<div class="item<%= " active" if product == @products.first %>">
-  	  <%= image_tag(product.image_url) %>
-  	  <div class="carousel-caption">
-  	    <%= product.name %>
-  	  </div>
-  	
-  	</div>
-  	<% end %>    
+  <div class="c-wrapper">
+    <div class="carousel-inner" role="listbox">
+      <% @products.each do |product| %>
+    	<div class="item<%= " active" if product == @products.first %>">
+    	  <%= image_tag(product.image_url, class: "img-inside") %>
+    	  <div class="carousel-caption">
+    	    <%= product.name %>
+    	  </div>
+    	
+    	</div>
+    	<% end %>    
+    </div>
   </div>
-</div>
 
 
   <!-- Controls -->
@@ -36,3 +37,4 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+
