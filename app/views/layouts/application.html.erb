@@ -32,10 +32,10 @@
 
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="/static_pages/landing_page">Home</a></li>
-            <li><a href="/static_pages/about">About</a></li>
-            <li><a href="/products">Products</a></li>
-            <li><a href="/static_pages/contact">Contact</a></li>
+            <li><%= link_to "Home", static_pages_landing_page_path %></li>
+            <li><%= link_to "About", static_pages_about_path %></li>
+            <li><%= link_to "Products", products_path %></li>
+            <li><%= link_to "Contact", static_pages_contact_path %></li>
           </ul>
         </div>
       </div> <!-- end nav container --> 
