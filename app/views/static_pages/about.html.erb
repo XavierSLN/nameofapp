@@ -9,7 +9,7 @@
     <p>We are a team of passionate bikers. Come and meet us!</p>
 
 
-    <p><%= link_to "Product of the day", product_path(3) %></p>
+    <p><%= link_to 'Product of the day', product_path(@featured_product) if @featured_product %></p>
     <p><%= link_to 'Previous page', products_path %></p>
     <p><%= link_to 'Home page', static_pages_index_path %></p>
     <p><%= link_to 'About page', static_pages_about_path %></p>
