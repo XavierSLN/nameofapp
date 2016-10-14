@@ -33,6 +33,8 @@ group :development, :test do
   gem 'byebug', platform: :mri
   # Use sqlite3
 	gem 'sqlite3'
+  # Use devise for authentication
+  gem 'devise'
 end
 
 group :development do
